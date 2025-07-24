@@ -9,7 +9,6 @@ import Contacts from "./Contacts";
 import Dock from "../components/Dock/Dock";
 import Lanyard from "@/components/Lanyard/Lanyard";
 import Stack from "@/components/Stack/Stack";
-import { BlurFade } from "@/components/magicui/blur-fade";
 
 // icons
 import { HiHome } from "react-icons/hi";
