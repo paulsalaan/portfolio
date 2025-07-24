@@ -30,7 +30,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           className="w-full rounded-t-sm h-48 object-cover"
         />
       </div>
-      <div className="py-3 px-4">
+      <div className="p-2">
         <div className="flex flex-col gap-1">
           <h2 className="font-geist font-bold text-bas mb-1">{title}</h2>
           <p className="text-[11px] font-semibold mb-2 text-black dark:text-white">

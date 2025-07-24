@@ -64,7 +64,7 @@ const Contacts = () => {
                 <a
                   href="https://www.instagram.com/nine.e_____?igsh=cHhraTVjdXBqM2o1"
                   target="_blank"
-                  className="text-amber-500 hover:underline"
+                  className="text-blue-500 hover:underline"
                 >
                   Instagram
                 </a>{" "}
@@ -72,7 +72,7 @@ const Contacts = () => {
                 <a
                   href="https://www.facebook.com/nienvirone"
                   target="_blank"
-                  className="text-blue-600 hover:underline"
+                  className="text-blue-500 hover:underline"
                 >
                   Facebook
                 </a>
@@ -80,7 +80,7 @@ const Contacts = () => {
                 <a
                   href="https://www.linkedin.com/in/paul-ni%C3%B1o-salaan-5699b634a/"
                   target="_blank"
-                  className="text-blue-400 hover:underline"
+                  className="text-blue-500 hover:underline"
                 >
                   LinkedIn
                 </a>

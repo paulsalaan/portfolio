@@ -44,7 +44,9 @@ const Counter: React.FC<CounterProps> = ({
 
   return (
     <div className="flex gap-1 text-xs font-medium font-inter text-center text-black dark:text-white">
-      {displayValue}+<div className="text-xs">lines of code</div>
+      <div className="text-xs text-zinc-200">
+        Coded {displayValue}+ lines of code for now
+      </div>
     </div>
   );
 };

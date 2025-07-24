@@ -24,18 +24,18 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.7 }}
           >
-            <p className="text-base md:text-[17px] lg:text-[20px] font-inter tracking-tight max-w-[28rem]">
+            <p className="text-base md:text-[17px] lg:text-[20px] font-inter tracking-tight max-w-[30rem]">
               Just a human who loves crafting clean UI/UX, building functional
               designs, learning full-stack dev — and obsessed with 🐈 cats & 🦦
               otters.
             </p>
             <div className="flex flex-col md:flex-row gap-2 mt-3">
-              <span className="text-[10px] italic font-inter">
-                (The profile icon and card are not final yet.)
+              <span className="lg:hidden text-zinc-300 text-[9.5px] italic font-inter">
+                View in laptop for more better viewing and experience
               </span>
               <div className="flex items-center gap-2">
-                <div className="bg-black dark:bg-white size-1 rounded-full" />
-                <Counter to={900} duration={3} />
+                <div className="bg-blue-500 size-1 rounded-full" />
+                <Counter to={400} duration={3} />
               </div>
             </div>
           </motion.div>
