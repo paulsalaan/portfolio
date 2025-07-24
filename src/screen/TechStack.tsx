@@ -21,6 +21,10 @@ const techStack = [
   "Slack",
   "Abobe Photoshop",
   "Adobe Illustrator",
+  "Framer",
+  "Typescript",
+  "Firebase",
+  "Canva",
 ];
 
 const TechStack = () => {

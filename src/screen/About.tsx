@@ -6,8 +6,8 @@ const content = [
     <span className="text-black dark:text-white font-semibold">
       4th-year BSIT student at USTP-CDO Campus
     </span>{" "}
-    with a passion for building accessible, user-centered digital experiences
-    while continuously learning and growing as a future full-stack developer.
+    with a passion for building accessible, user-centered digital experiences,
+    continuously learning and growing as a future full-stack developer.
   </>,
   <>
     <span className="text-black dark:text-white font-semibold">
@@ -22,9 +22,12 @@ const content = [
     </span>
   </>,
   <>
-    I’m also expanding my skills in full-stack development while exploring the
-    potential of AI in modern applications. This journey drives me to
-    continuously learn, build, and improve with every project.
+    I’m also expanding my skills in{" "}
+    <span className="text-black dark:text-white font-semibold">
+      full-stack development
+    </span>{" "}
+    while exploring the potential of AI in modern applications. This journey
+    drives me to continuously learn, build, and improve with every project.
   </>,
 ];
 
