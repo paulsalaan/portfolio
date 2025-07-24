@@ -52,7 +52,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
 
         {/* ✅ Type and GitHub badge row */}
-        <div className="flex items-center gap-1 font-inter">
+        <div className="flex items-center gap-2 font-inter">
           {/* Type badge with icon */}
           <span className="inline-flex items-center gap-1 text-[10px] font-medium px-2 py-1 rounded-sm bg-black dark:bg-white dark:text-black text-white">
             {type === "Website" ? (
