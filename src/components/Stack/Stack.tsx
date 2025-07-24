@@ -6,6 +6,7 @@ import Image2 from "@/assets/image_2.jpg";
 import Image3 from "@/assets/image_3.jpg";
 import Image4 from "@/assets/image_4.jpg";
 import Image5 from "@/assets/image_5.jpg";
+import Image6 from "@/assets/dummyprofile.jpg";
 
 interface CardRotateProps {
   children: React.ReactNode;
@@ -69,9 +70,10 @@ export default function Stack({
       : [
           { id: 1, img: Image5 },
           { id: 2, img: Image4 },
-          { id: 3, img: Image1 },
-          { id: 4, img: Image2 },
-          { id: 5, img: Image3 },
+          { id: 3, img: Image6 },
+          { id: 4, img: Image1 },
+          { id: 5, img: Image2 },
+          { id: 6, img: Image3 },
         ]
   );
 

@@ -30,7 +30,7 @@ const Hero = () => {
               otters.
             </p>
             <div className="flex flex-col md:flex-row gap-2 mt-3">
-              <span className="lg:hidden text-zinc-300 text-[9.5px] italic font-inter">
+              <span className="lg:hidden text-zinc-600 dark:text-zinc-300 text-[9.5px] italic font-inter">
                 View in laptop for more better viewing and experience
               </span>
               <div className="flex items-center gap-2">
