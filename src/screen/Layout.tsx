@@ -39,7 +39,7 @@ const Layout = () => {
       icon: <HiHome size={19} />,
       label: "Home",
       onClick: () => {
-        window.location.href = "/portfolio/";
+        window.location.replace("/portfolio/");
       },
     },
     {
