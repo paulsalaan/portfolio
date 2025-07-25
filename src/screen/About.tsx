@@ -21,21 +21,13 @@ const content = [
       deliver intuitive and effective digital experiences.
     </span>
   </>,
-  <>
-    I’m also expanding my skills in{" "}
-    <span className="text-black dark:text-white font-semibold">
-      full-stack development
-    </span>{" "}
-    while exploring the potential of AI in modern applications. This journey
-    drives me to continuously learn, build, and improve with every project.
-  </>,
 ];
 
 const About = () => {
   return (
     <section>
       <motion.h1
-        initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+        initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
         animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
         transition={{ duration: 0.6, ease: "easeOut", delay: 0.9 }}
         className="font-inter text-lg font-bold mb-2 lg:mb-3"
@@ -46,7 +38,7 @@ const About = () => {
       {content.map((paragraph, index) => (
         <motion.p
           key={index}
-          initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+          initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{
             duration: 0.6,

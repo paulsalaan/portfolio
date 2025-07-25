@@ -107,7 +107,7 @@ const Layout = () => {
               <div className="hidden lg:flex items-center justify-center w-full max-w-[180px]">
                 <div className="relative w-full h-auto">
                   <motion.div
-                    initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
+                    initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                     animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{
                       duration: 0.7,
@@ -164,7 +164,7 @@ const Layout = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 1.9 }}
+              transition={{ duration: 0.6, delay: 1.6 }}
             >
               <Contacts />
             </motion.div>

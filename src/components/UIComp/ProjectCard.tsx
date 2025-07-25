@@ -33,11 +33,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="p-2">
         <div className="flex flex-col gap-1">
           <h2 className="font-geist font-bold text-bas mb-1">{title}</h2>
-          <p className="text-[11px] font-semibold mb-2 text-black dark:text-white">
+          <p className="text-xs font-semibold mb-2 text-black dark:text-white">
             {year}
           </p>
         </div>
-        <p className="text-xs text-zinc-500 dark:text-zinc-300 mb-4 line-clamp-3">
+        <p className="text-xs text-zinc-500 font-inter leading-5 dark:text-zinc-300 mb-3">
           {description}
         </p>
         <div className="flex flex-wrap font-inter gap-2 text-[10px] mb-3">
@@ -57,12 +57,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <span className="inline-flex items-center gap-1 text-[10px] font-medium px-2 py-1 rounded-sm bg-black dark:bg-white dark:text-black text-white">
             {type === "Website" ? (
               <>
-                <FaGlobe className="text-[0.7rem]" />
+                <FaGlobe className="text-[10.5px]" />
                 Website
               </>
             ) : (
               <>
-                <FaMobileAlt className="text-[0.75rem]" />
+                <FaMobileAlt className="text-[10.5px]" />
                 Mobile
               </>
             )}
@@ -74,10 +74,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               href={githubLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-[10px] font-medium px-3 py-1 rounded-sm bg-black text-white dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-300 transition"
+              className="inline-flex items-center gap-1 text-[10.5px] font-medium px-3 py-1 rounded-sm bg-black text-white dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-300 transition"
             >
               <FaGithub className="text-[0.8rem]" />
-              View on GitHub
+              Github
             </a>
           )}
         </div>

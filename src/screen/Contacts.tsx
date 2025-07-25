@@ -7,9 +7,9 @@ const Contacts = () => {
         {/* "Contacts" label */}
         <motion.div
           className="w-full flex items-center justify-center"
-          initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
+          initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
           whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          viewport={{ once: true, amount: "some" }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{
             duration: 0.6,
             ease: "easeOut",
@@ -24,9 +24,9 @@ const Contacts = () => {
         {/* "Get in Touch" title */}
         <motion.div
           className="text-center"
-          initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
+          initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
           whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          viewport={{ once: true, amount: "some" }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{
             duration: 0.6,
             ease: "easeOut",
@@ -41,9 +41,9 @@ const Contacts = () => {
         {/* Description and Links */}
         <motion.div
           className="text-center"
-          initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
+          initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
           whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          viewport={{ once: true, amount: "some" }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{
             duration: 0.6,
             ease: "easeOut",
@@ -52,7 +52,7 @@ const Contacts = () => {
         >
           <div className="flex justify-center">
             <div className="w-full max-w-md">
-              <p className="font-inter text-xl lg:text-2xl text-gray-500 dark:text-gray-300 text-center">
+              <p className="font-inter text-xl lg:text-2xl text-zinc-500 dark:text-zinc-400 text-center">
                 Wanna chat or collab? Hit me up via{" "}
                 <a
                   href="mailto:paulninosalaan75@gmail.com"

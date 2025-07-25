@@ -21,7 +21,6 @@ const techStack = [
   "Slack",
   "Abobe Photoshop",
   "Adobe Illustrator",
-  "Framer",
   "Typescript",
   "Firebase",
   "Canva",
@@ -53,7 +52,7 @@ const TechStack = () => {
           {techStack.map((tool, index) => (
             <motion.div
               key={tool}
-              className="bg-black text-white dark:bg-white dark:text-black py-1 px-3 font-medium rounded-sm hover:bg-gray-800 dark:hover:bg-gray-300"
+              className="bg-black text-white dark:bg-white dark:text-black py-1 px-2 font-medium rounded-sm hover:bg-zinc-600 dark:hover:bg-gray-300 transition-colors duration-300"
               initial={{ opacity: 0, y: 10 }}
               animate={
                 hasAnimated ? { opacity: 1, y: 0 } : { filter: "blur(8px)" }

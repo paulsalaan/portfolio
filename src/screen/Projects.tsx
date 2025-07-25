@@ -65,15 +65,15 @@ const Projects = () => {
       <motion.div
         initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
         animate={hasAnimated ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}}
-        transition={{ duration: 0.7, ease: "easeOut", delay: 1 }}
+        transition={{ duration: 0.7, ease: "easeOut", delay: 0.7 }}
         className="text-black dark:text-white"
       >
         <h1 className="text-4xl lg:text-5xl text-center font-geist tracking-tighter font-bold">
           Have a look at my recent builds
         </h1>
-        <p className="mt-3 text-center text-lg font-inter leading-7 lg:leading-9 tracking-tight lg:text-2xl max-w-lg text-[#525252] dark:text-gray-300 mx-auto">
-          From 'Hello World' to centering divs like it's a boss battle — here
-          are the projects I made instead of touching grass.
+        <p className="mt-3 text-center text-lg font-inter leading-7 lg:leading-9 tracking-tight lg:text-2xl max-w-lg text-zinc-500 dark:text-zinc-400 mx-auto">
+          From 'Hello World' to centering divs like it's a boss battle. Here are
+          the projects I made instead of touching grass.
         </p>
       </motion.div>
 
@@ -81,7 +81,7 @@ const Projects = () => {
       <motion.div
         initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
         animate={hasAnimated ? { opacity: 1, y: 0, filter: "blur(0px)" } : {}}
-        transition={{ duration: 1, ease: "easeOut", delay: 1.1 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
         className="text-black dark:text-white"
       >
         <div className="flex mt-8 lg:mt-14 gap-2 bg-gray-100 dark:bg-[#1b1b1b] rounded-md p-1">
@@ -115,9 +115,9 @@ const Projects = () => {
         whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{
-          duration: 0.6,
+          duration: 0.5,
           ease: "easeOut",
-          delay: 0.3, // Delay BEFORE showing the entire grid
+          delay: 0.7, // Delay BEFORE showing the entire grid
         }}
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
