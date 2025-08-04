@@ -68,15 +68,7 @@ const Contacts = () => {
                 >
                   Instagram
                 </a>{" "}
-                DMs, say hi on{" "}
-                <a
-                  href="https://www.facebook.com/nienvirone"
-                  target="_blank"
-                  className="text-blue-500 hover:underline"
-                >
-                  Facebook
-                </a>
-                , or connect with me on{" "}
+                DMs, or connect with me on{" "}
                 <a
                   href="https://www.linkedin.com/in/paul-ni%C3%B1o-salaan-5699b634a/"
                   target="_blank"

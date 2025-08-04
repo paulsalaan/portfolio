@@ -16,6 +16,7 @@ import { FaGithub } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaFacebook } from "react-icons/fa";
 import { IoIosMoon, IoIosSunny } from "react-icons/io";
+import { HiMiniDocumentText } from "react-icons/hi2";
 
 // react-modules
 import { useState, useEffect } from "react";
@@ -57,10 +58,9 @@ const Layout = () => {
         ),
     },
     {
-      icon: <FaFacebook size={18} />,
-      label: "Facebook",
-      onClick: () =>
-        window.open("https://www.facebook.com/nienvirone", "_blank"),
+      icon: <HiMiniDocumentText size={18} />,
+      label: "Download CV",
+      onClick: () => window.open("#", "_blank"),
     },
     {
       icon: isDark ? <IoIosSunny size={19} /> : <IoIosMoon size={19} />,
