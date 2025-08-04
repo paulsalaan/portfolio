@@ -2,12 +2,13 @@ import React from "react";
 import { FaGithub, FaGlobe, FaMobileAlt } from "react-icons/fa"; // Import icons
 
 export interface ProjectCardProps {
+  id: string;
   image: string;
   title: string;
   year: string;
   description: string;
   technologies: string[];
-  type: "Website" | "Mobile";
+  type: Array<"Website" | "Mobile">;
   githubLink?: string;
   delay?: number;
 }
@@ -32,7 +33,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
       <div className="p-2">
         <div className="flex flex-col gap-1">
-          <h2 className="font-geist font-bold text-bas mb-1">{title}</h2>
+          <h2 className="font-geist tracking-wide font-semibold text-base mb-1">
+            {title}
+          </h2>
           <p className="text-xs font-semibold mb-2 text-black dark:text-white">
             {year}
           </p>
@@ -52,23 +55,28 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
 
         {/* ✅ Type and GitHub badge row */}
-        <div className="flex items-center gap-2 font-inter">
-          {/* Type badge with icon */}
-          <span className="inline-flex items-center gap-1 text-[10px] font-medium px-2 py-1 rounded-sm bg-black dark:bg-white dark:text-black text-white">
-            {type === "Website" ? (
-              <>
-                <FaGlobe className="text-[10.5px]" />
-                Website
-              </>
-            ) : (
-              <>
-                <FaMobileAlt className="text-[10.5px]" />
-                Mobile
-              </>
-            )}
-          </span>
+        <div className="flex items-center gap-2 font-inter flex-wrap">
+          {/* Render each type as a badge with its icon */}
+          {type.map((t) => (
+            <span
+              key={t}
+              className="inline-flex items-center gap-1 text-[10px] font-medium px-2 py-1 rounded-sm bg-black dark:bg-white dark:text-black text-white"
+            >
+              {t === "Website" ? (
+                <>
+                  <FaGlobe className="text-[10.5px]" />
+                  Website
+                </>
+              ) : (
+                <>
+                  <FaMobileAlt className="text-[10.5px]" />
+                  Mobile
+                </>
+              )}
+            </span>
+          ))}
 
-          {/* GitHub button with icon */}
+          {/* GitHub button */}
           {githubLink && (
             <a
               href={githubLink}

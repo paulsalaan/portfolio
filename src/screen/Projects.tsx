@@ -1,9 +1,11 @@
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import ProjectCard from "@/components/UIComp/ProjectCard";
+import type { ProjectCardProps } from "@/components/UIComp/ProjectCard";
 import { cardVariants } from "@/cardVariant";
 import ExerEase from "@/assets/exerease_3.png";
 import Interture from "@/assets/interture_1.png";
+import UniClaim from "@/assets/uniclaim.png";
 
 const Projects = () => {
   const ref = useRef(null);
@@ -17,7 +19,7 @@ const Projects = () => {
     if (isInView) setHasAnimated(true);
   }, [isInView]);
 
-  const developmentProjects = [
+  const developmentProjects: ProjectCardProps[] = [
     {
       id: "dev-1",
       image: Interture,
@@ -26,12 +28,23 @@ const Projects = () => {
       description:
         "Interture is a sleek furniture e-commerce platform that lets users easily browse and buy quality home pieces from trusted brands.",
       technologies: ["React", "Firebase"],
-      type: "Website",
-      githubLink: "https://github.com/yourusername/paul-portfolio",
+      type: ["Website"], // ✅ now an array of literals
+      githubLink: "https://github.com/paulsalaan",
+    },
+    {
+      id: "dev-2",
+      image: UniClaim,
+      title: "UniClaim",
+      year: "2025",
+      description:
+        "UniClaim is a cross-platform lost and found system specifically tailored for the USTP-CDO campus, designed to help the students and locate lost items efficiently.",
+      technologies: ["React", "Firebase", "Django"],
+      type: ["Mobile", "Website"],
+      githubLink: "https://github.com/paulsalaan",
     },
   ];
 
-  const designProjects = [
+  const designProjects: ProjectCardProps[] = [
     {
       id: "des-1",
       image: ExerEase,
@@ -40,7 +53,7 @@ const Projects = () => {
       description:
         "ExerEase makes workout planning easy with a clean, responsive design and personalized routines based on time, goals, and skill level—featuring animated demos and adaptive difficulty.",
       technologies: ["Figma", "Canva", "Pexels", "Mobbin"],
-      type: "Mobile",
+      type: ["Mobile"], // ✅ now an array
     },
   ];
 
@@ -132,8 +145,8 @@ const Projects = () => {
             >
               <ProjectCard
                 {...project}
-                delay={index * 0.2} // staggered delay for each card
-                type={project.type as "Website" | "Mobile"}
+                delay={index * 0.2}
+                type={project.type}
               />
             </motion.div>
           ))}
