@@ -14,7 +14,6 @@ import Stack from "@/components/Stack/Stack";
 import { HiHome } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
-import { FaFacebook } from "react-icons/fa";
 import { IoIosMoon, IoIosSunny } from "react-icons/io";
 import { HiMiniDocumentText } from "react-icons/hi2";
 
