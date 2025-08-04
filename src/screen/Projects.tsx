@@ -40,7 +40,7 @@ const Projects = () => {
         "UniClaim is a cross-platform lost and found system specifically tailored for the USTP-CDO campus, designed to help the students and locate lost items efficiently.",
       technologies: ["React", "Firebase", "Django"],
       type: ["Mobile", "Website"],
-      githubLink: "https://github.com/paulsalaan",
+      githubLink: "",
     },
   ];
 
