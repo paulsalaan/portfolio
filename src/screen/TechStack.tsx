@@ -27,7 +27,7 @@ const techStack = [
 ];
 
 const TechStack = () => {
-  const { ref, inView } = useInView({ threshold: 0.7 });
+  const { ref, inView } = useInView({ threshold: 1 });
   const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {

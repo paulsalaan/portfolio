@@ -33,10 +33,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       </div>
       <div className="p-2">
         <div className="flex flex-col gap-1">
-          <h2 className="font-geist tracking-wide font-semibold text-base">
+          <h2 className="font-inter tracking-wide font-semibold text-sm">
             {title}
           </h2>
-          <p className="text-sm font-medium mb-1 text-black dark:text-white">
+          <p className="text-[11px] font-inter font-medium mb-1 text-black dark:text-white">
             {year}
           </p>
         </div>

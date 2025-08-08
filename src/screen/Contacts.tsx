@@ -53,14 +53,13 @@ const Contacts = () => {
           <div className="flex justify-center">
             <div className="w-full max-w-md">
               <p className="font-inter text-xl lg:text-2xl text-zinc-500 dark:text-zinc-400 text-center">
-                Wanna chat or collab? Hit me up via{" "}
                 <a
                   href="mailto:paulninosalaan75@gmail.com"
                   className="text-blue-500 hover:underline"
                 >
-                  email
-                </a>
-                , slide into my{" "}
+                  Email me
+                </a>{" "}
+                for a collaboration or a casual chat, slide into my{" "}
                 <a
                   href="https://www.instagram.com/nine.e_____?igsh=cHhraTVjdXBqM2o1"
                   target="_blank"
@@ -68,7 +67,7 @@ const Contacts = () => {
                 >
                   Instagram
                 </a>{" "}
-                DMs, or connect with me on{" "}
+                for DMs, or let’s connect on{" "}
                 <a
                   href="https://www.linkedin.com/in/paul-ni%C3%B1o-salaan-5699b634a/"
                   target="_blank"

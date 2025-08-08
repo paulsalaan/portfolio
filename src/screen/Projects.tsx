@@ -12,12 +12,18 @@ const Projects = () => {
   const isInView = useInView(ref, { amount: "some" });
   const [hasAnimated, setHasAnimated] = useState(false);
   const [activeTab, setActiveTab] = useState<"development" | "design">(
-    "development"
+    () =>
+      (localStorage.getItem("lastViewedTab") as "development" | "design") ||
+      "development"
   );
 
   useEffect(() => {
     if (isInView) setHasAnimated(true);
   }, [isInView]);
+
+  useEffect(() => {
+    localStorage.setItem("lastViewedTab", activeTab);
+  }, [activeTab]);
 
   const developmentProjects: ProjectCardProps[] = [
     {
@@ -130,7 +136,7 @@ const Projects = () => {
         transition={{
           duration: 0.5,
           ease: "easeOut",
-          delay: 0.7, // Delay BEFORE showing the entire grid
+          delay: 0.7,
         }}
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">

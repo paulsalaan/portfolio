@@ -45,7 +45,7 @@ const About = () => {
             ease: "easeOut",
             delay: 1 + index * 0.1,
           }}
-          className="text-sm leading-6 lg:text-[15px] font-inter text-gray-800 dark:text-gray-200 mb-3"
+          className="text-sm leading-6 lg:text-[15px] font-inter text-gray-600 dark:text-gray-400 mb-3"
         >
           {paragraph}
         </motion.p>
