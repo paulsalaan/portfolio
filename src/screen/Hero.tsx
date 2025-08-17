@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import DummyProfile from "@/assets/dummyprofile.jpg";
+import DummyProfile from "@/assets/image_2.jpg";
 import Counter from "@/components/UIComp/CounterProp";
 
 const Hero = () => {
@@ -32,9 +32,6 @@ const Hero = () => {
               </span>
             </p>
             <div className="flex flex-col md:flex-row gap-2 mt-4">
-              {/* <span className="lg:hidden text-zinc-600 dark:text-zinc-300 text-[9.5px] italic font-inter">
-                View in laptop for more better viewing and experience
-              </span> */}
               <div className="flex items-center gap-2">
                 <div className="bg-blue-500 size-1 rounded-full" />
                 <Counter to={400} duration={3} />

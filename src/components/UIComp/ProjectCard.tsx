@@ -23,7 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   githubLink,
 }) => {
   return (
-    <div className="w-full h-full dark:bg-zinc-900 border-1 border-gray-500/15 rounded-md hover:shadow-md transition">
+    <div className="w-full h-full dark:bg-zinc-900 border-1 border-gray-500/15 rounded-md hover:shadow-lg/2 transition">
       <div>
         <img
           src={image}
