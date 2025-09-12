@@ -91,8 +91,8 @@ const Projects = () => {
           Have a look at my recent builds
         </h1>
         <p className="mt-3 text-center text-lg font-inter leading-7 lg:leading-9 tracking-tight lg:text-2xl max-w-lg text-zinc-500 dark:text-zinc-400 mx-auto">
-          From 'Hello World' to centering divs like it's a boss battle. Here are
-          the projects I made instead of touching grass.
+          From ‘Hello World’ to centering divs like it’s the final boss—here are
+          a few projects.
         </p>
       </motion.div>
 
