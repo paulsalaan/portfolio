@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 const MainRoute = () => {
   return (
     <>
-      <BrowserRouter basename="/portfolio">
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />} />
         </Routes>
