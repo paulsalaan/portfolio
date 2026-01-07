@@ -6,6 +6,7 @@ import { cardVariants } from "@/cardVariant";
 import ExerEase from "@/assets/exerease_3.png";
 import Interture from "@/assets/interture_1.png";
 import UniClaim from "@/assets/uniclaim.png";
+import Minispire from "@/assets/minispire.png";
 
 const Projects = () => {
   const ref = useRef(null);
@@ -57,9 +58,19 @@ const Projects = () => {
       title: "ExerEase",
       year: "2025",
       description:
-        "ExerEase makes workout planning easy with a clean, responsive design and personalized routines based on time, goals, and skill level—featuring animated demos and adaptive difficulty.",
+        "ExerEase simplifies workout planning through a clean, responsive interface that I designed, focusing on intuitive navigation and usability. The platform delivers personalized routines based on time, goals, and skill level, enhanced with animated demos and adaptive difficulty to ensure an engaging and user-friendly experience.",
       technologies: ["Figma", "Canva", "Pexels", "Mobbin"],
-      type: ["Mobile"], // ✅ now an array
+      type: ["Mobile"],
+    },
+    {
+      id: "des-2",
+      image: Minispire,
+      title: "Minispire",
+      year: "2023",
+      description:
+        "Minispire is a website I designed to showcase minimalist and clean web designs. Its name reflects its purpose: to inspire users through minimalism, providing a simple, modern, and uncluttered interface that encourages exploration and sparks ideas for creating elegant web experiences.",
+      technologies: ["Figma", "Pexels"],
+      type: ["Website"],
     },
   ];
 
@@ -88,11 +99,11 @@ const Projects = () => {
         className="text-black dark:text-white"
       >
         <h1 className="text-4xl lg:text-5xl text-center font-geist tracking-tighter font-bold">
-          Have a look at my recent builds
+          Have a look at my recent builds and designs
         </h1>
         <p className="mt-3 text-center text-lg font-inter leading-7 lg:leading-9 tracking-tight lg:text-2xl max-w-lg text-zinc-500 dark:text-zinc-400 mx-auto">
-          From ‘Hello World’ to centering divs like it’s the final boss—here are
-          a few projects.
+          From ‘Hello World’ to centering divs like it’s the final boss, here
+          are a few projects and designs.
         </p>
       </motion.div>
 

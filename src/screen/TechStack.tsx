@@ -9,10 +9,7 @@ const techStack = [
   "Tailwind",
   "JavaScript",
   "Node.js",
-  "Express.js",
-  "MongoDB",
   "MySQL",
-  "Cassandra",
   "Figma",
   "Framer",
   "VS Code",
@@ -21,9 +18,11 @@ const techStack = [
   "Slack",
   "Abobe Photoshop",
   "Adobe Illustrator",
-  "Typescript",
   "Firebase",
   "Canva",
+  "Office Applications",
+  "Davinci Resolve",
+  "Capcut",
 ];
 
 const TechStack = () => {

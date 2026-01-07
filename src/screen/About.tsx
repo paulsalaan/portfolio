@@ -2,22 +2,32 @@ import { motion } from "framer-motion";
 
 const content = [
   <>
-    I'm a{" "}
+    I am a{" "}
     <span className="text-black dark:text-white font-semibold">
-      4th-year BSIT student at USTP-CDO Campus
+      fourth-year college student
     </span>{" "}
-    with a passion for building accessible, user-centered digital experiences,
-    continuously learning and growing as a future full-stack developer.
+    pursuing a{" "}
+    <span className="text-black dark:text-white font-semibold">
+      Bachelor of Science in Information Technology
+    </span>{" "}
+    at{" "}
+    <span className="text-black dark:text-white font-semibold">
+      the University of Science and Technology of Southern Philippines – Cagayan
+      de Oro Campus (USTP-CDO)
+    </span>
+    , with a strong interest in building accessible, user-centered digital
+    experiences and a commitment to continuous learning as a future full-stack
+    developer.
   </>,
   <>
     <span className="text-black dark:text-white font-semibold">
-      With a strong interest in UI/UX design,
+      With a growing focus on UI/UX design practices,
     </span>{" "}
-    I aim to craft interfaces that are both functional and visually engaging. I
-    am committed to designing user-centric solutions that enhance usability and
-    accessibility.{" "}
+    I focus on crafting interfaces that are both functional and visually
+    engaging. I am committed to developing user-centered solutions that improve
+    usability and accessibility.{" "}
     <span className="text-black dark:text-white font-semibold">
-      By combining aesthetic appeal with strategic functionality, I strive to
+      By balancing aesthetic quality with purposeful functionality, I aim to
       deliver intuitive and effective digital experiences.
     </span>
   </>,
