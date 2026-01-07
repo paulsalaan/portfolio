@@ -58,7 +58,7 @@ const Layout = () => {
     },
     {
       icon: <HiMiniDocumentText size={18} />,
-      label: "Download CV",
+      label: "Access My CV",
       onClick: () => window.open("/myCV.pdf", "_blank"),
     },
     {
