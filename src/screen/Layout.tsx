@@ -59,7 +59,7 @@ const Layout = () => {
     {
       icon: <HiMiniDocumentText size={18} />,
       label: "Download CV",
-      onClick: () => window.open("/public/myCV.pdf", "_blank"),
+      onClick: () => window.open("/myCV.pdf", "_blank"),
     },
     {
       icon: isDark ? <IoIosSunny size={19} /> : <IoIosMoon size={19} />,
