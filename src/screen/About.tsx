@@ -15,9 +15,11 @@ const content = [
       the University of Science and Technology of Southern Philippines – Cagayan
       de Oro Campus (USTP-CDO)
     </span>
-    , with a strong interest in building accessible, user-centered digital
-    experiences and a commitment to continuous learning as a future full-stack
-    developer.
+    , with a strong interest in{" "}
+    <span className="text-black dark:text-white font-semibold">
+      building accessible, user-centered digital experiences{" "}
+    </span>
+    and a commitment to continuous learning as a future full-stack developer.
   </>,
   <>
     <span className="text-black dark:text-white font-semibold">

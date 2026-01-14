@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaGlobe, FaMobileAlt } from "react-icons/fa"; // Import icons
+import { FaGithub, FaGlobe, FaMobileAlt, FaFigma } from "react-icons/fa"; // 1. Added FaFigma
 
 export interface ProjectCardProps {
   id: string;
@@ -8,8 +8,9 @@ export interface ProjectCardProps {
   year: string;
   description: string;
   technologies: string[];
-  type: Array<"Website" | "Mobile">;
+  type: Array<"Website" | "Mobile" | "Figma">; // 3. Added "Figma" to type union
   githubLink?: string;
+  figmaLink?: string;
   delay?: number;
 }
 
@@ -21,6 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   technologies,
   type,
   githubLink,
+  figmaLink,
 }) => {
   return (
     <div className="w-full h-full dark:bg-zinc-900 border-1 border-gray-500/15 rounded-md hover:shadow-lg/2 transition">
@@ -54,25 +56,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           ))}
         </div>
 
-        {/* ✅ Type and GitHub badge row */}
-        <div className="flex items-center gap-2 font-inter flex-wrap">
-          {/* Render each type as a badge with its icon */}
+        {/* ✅ Type, GitHub, and Figma badge row */}
+        <div className="flex items-center gap-2 font-inter flex-wrap relative z-20">
           {type.map((t) => (
             <span
               key={t}
               className="inline-flex items-center gap-1 text-[10px] font-medium px-2 py-1 rounded-sm bg-black dark:bg-white dark:text-black text-white"
             >
-              {t === "Website" ? (
-                <>
-                  <FaGlobe className="text-[10.5px]" />
-                  Website
-                </>
-              ) : (
-                <>
-                  <FaMobileAlt className="text-[10.5px]" />
-                  Mobile
-                </>
-              )}
+              {t === "Website" && <FaGlobe className="text-[10.5px]" />}
+              {t === "Mobile" && <FaMobileAlt className="text-[10.5px]" />}
+              {t === "Figma" && <FaFigma className="text-[10.5px]" />}
+
+              {/* Display the text */}
+              {t}
             </span>
           ))}
 
@@ -81,11 +77,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <a
               href={githubLink}
               target="_blank"
-              rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-[10.5px] font-medium px-3 py-1 rounded-sm bg-black text-white dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-300 transition"
             >
               <FaGithub className="text-[0.8rem]" />
               Github
+            </a>
+          )}
+
+          {/* 4. Added Figma Button */}
+          {figmaLink && (
+            <a
+              href={figmaLink}
+              target="_blank"
+              className="inline-flex items-center gap-1 text-[10.5px] font-medium px-3 py-1 rounded-sm bg-black text-white dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-300 transition"
+            >
+              <FaFigma className="text-[0.8rem]" />
+              Figma
             </a>
           )}
         </div>

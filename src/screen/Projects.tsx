@@ -36,7 +36,7 @@ const Projects = () => {
         "Interture is a sleek furniture e-commerce platform that lets users easily browse and buy quality home pieces from trusted brands.",
       technologies: ["React", "Firebase"],
       type: ["Website"], // ✅ now an array of literals
-      githubLink: "https://github.com/paulsalaan",
+      githubLink: "https://github.com/cmosqueda/interture-react.git",
     },
     {
       id: "dev-2",
@@ -47,7 +47,7 @@ const Projects = () => {
         "UniClaim is a cross-platform lost and found system specifically tailored for the USTP-CDO campus, designed to help the students and locate lost items efficiently.",
       technologies: ["React", "Firebase", "Django"],
       type: ["Mobile", "Website"],
-      githubLink: "",
+      githubLink: "https://github.com/Bluerat1/UniClaim-v1.0.1.git",
     },
   ];
 
@@ -58,9 +58,11 @@ const Projects = () => {
       title: "ExerEase",
       year: "2025",
       description:
-        "ExerEase simplifies workout planning through a clean, responsive interface that I designed, focusing on intuitive navigation and usability. The platform delivers personalized routines based on time, goals, and skill level, enhanced with animated demos and adaptive difficulty to ensure an engaging and user-friendly experience.",
-      technologies: ["Figma", "Canva", "Pexels", "Mobbin"],
+        "ExerEase is a responsive workout planner I designed featuring personalized routines and animated demos, built for intuitive navigation and usability.",
+      technologies: ["Canva", "Pexels", "Mobbin"],
       type: ["Mobile"],
+      figmaLink:
+        "https://www.figma.com/design/7CWNWXIDCN9mlT9eas8Pi8/ExerEase-Prototype?node-id=0-1&t=BSazB4hrzx5C3myU-1",
     },
     {
       id: "des-2",
@@ -68,9 +70,11 @@ const Projects = () => {
       title: "Minispire",
       year: "2023",
       description:
-        "Minispire is a website I designed to showcase minimalist and clean web designs. Its name reflects its purpose: to inspire users through minimalism, providing a simple, modern, and uncluttered interface that encourages exploration and sparks ideas for creating elegant web experiences.",
-      technologies: ["Figma", "Pexels"],
+        "Minispire is a website I designed to showcase minimalist web aesthetics, offering a clean, modern interface that inspires users to create elegant digital experiences.",
+      technologies: ["Pexels"],
       type: ["Website"],
+      figmaLink:
+        "https://www.figma.com/design/k9XZ4A01MnTWyJrh5o78s1/R6-%7C-Salaan--Paul-Nino-B.?node-id=0-1&t=lFiVCMybeUuMOzyF-1",
     },
   ];
 

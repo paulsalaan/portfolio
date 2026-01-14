@@ -24,17 +24,19 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.7 }}
           >
-            <p className="relative text-base text-black dark:text-white md:text-[17px] lg:text-[20px] font-inter tracking-tight max-w-[30rem]">
-              Just a human who loves crafting clean UI/UX and turning designs
-              into code but still learning to get along with CS
-              <span className="absolute transform translate-y-[8px] rotate-45">
-                S.
-              </span>
-            </p>
+            <div className="max-w-[30rem]">
+              <p className="relative text-base text-black dark:text-white md:text-[17px] lg:text-[20px] lg:mr-[2.3rem] lg:w-[29rem] font-inter tracking-tight">
+                Just a human making clean UI/UX designs and turning it into
+                code, while navigating a complicated relationship with CS
+                <span className="absolute transform translate-y-[8px] rotate-45">
+                  S.
+                </span>
+              </p>
+            </div>
             <div className="flex flex-col md:flex-row gap-2 mt-4">
               <div className="flex items-center gap-2">
                 <div className="bg-blue-500 size-1 rounded-full" />
-                <Counter to={400} duration={3} />
+                <Counter to={550} duration={3} />
               </div>
             </div>
           </motion.div>

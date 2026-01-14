@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { BlurFade } from "@/components/magicui/blur-fade";
 
 const techStack = [
+  "HTML",
   "React",
   "Vite",
   "Tailwind",
@@ -22,7 +23,7 @@ const techStack = [
   "Canva",
   "Office Applications",
   "Davinci Resolve",
-  "Capcut",
+  "CapCut",
 ];
 
 const TechStack = () => {
