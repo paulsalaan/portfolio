@@ -52,7 +52,7 @@ const Layout = () => {
       label: "Instagram",
       onClick: () =>
         window.open(
-          "https://www.instagram.com/nine.e_____?igsh=cHhraTVjdXBqM2o1",
+          "https://www.instagram.com/psmhxswr?igsh=cHhraTVjdXBqM2o1",
           "_blank"
         ),
     },

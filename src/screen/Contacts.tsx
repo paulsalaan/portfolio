@@ -61,7 +61,7 @@ const Contacts = () => {
                 </a>{" "}
                 for a collaboration or a casual chat, slide into my{" "}
                 <a
-                  href="https://www.instagram.com/nine.e_____?igsh=cHhraTVjdXBqM2o1"
+                  href="https://www.instagram.com/psmhxswr?igsh=cHhraTVjdXBqM2o1"
                   target="_blank"
                   className="text-blue-500 hover:underline"
                 >
