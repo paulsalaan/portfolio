@@ -4,7 +4,7 @@ import Counter from "@/components/UIComp/CounterProp";
 
 const Hero = () => {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex gap-2">
       <div className="flex gap-4 md:gap-6">
         {/* Text Column */}
         <div className="flex flex-col md:gap-1">
@@ -24,7 +24,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.7 }}
           >
-            <div className="max-w-[30rem]">
+            <div className="md:max-w-[50rem]">
               <p className="relative text-base text-black dark:text-white md:text-[17px] lg:text-[20px] lg:mr-[2.3rem] lg:w-[29rem] font-inter tracking-tight">
                 Just a human making clean UI/UX designs and turning it into
                 code, while navigating a complicated relationship with CS

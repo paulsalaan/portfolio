@@ -103,7 +103,7 @@ const Projects = () => {
         className="text-black dark:text-white"
       >
         <h1 className="text-4xl lg:text-5xl text-center font-geist tracking-tighter font-bold">
-          Have a look at my recent builds and designs
+          Here are my personal and collaborative builds and designs
         </h1>
         <p className="mt-3 text-center text-lg font-inter leading-7 lg:leading-9 tracking-tight lg:text-2xl max-w-lg text-zinc-500 dark:text-zinc-400 mx-auto">
           From ‘Hello World’ to centering divs like it’s the final boss, here

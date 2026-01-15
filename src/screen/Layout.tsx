@@ -94,8 +94,8 @@ const Layout = () => {
 
         {/* Overlay content */}
         <div className="absolute inset-0 z-10 flex justify-center items-start px-4 pointer-events-none">
-          <div className="md:max-w-2xl space-y-12 lg:space-y-13 lg:max-w-[2xl] xl:max-w-3xl py-2 px-2 lg:px-5 mt-10 lg:mt-19 w-full pointer-events-auto backdrop-blur-md backdrop-saturate-100 rounded-xl">
-            <div className="flex gap-5">
+          <div className="md:max-w-3xl space-y-12 lg:space-y-13 lg:max-w-[2xl] xl:max-w-3xl py-2 px-2 lg:px-5 mt-10 lg:mt-19 w-full pointer-events-auto backdrop-blur-md backdrop-saturate-100 rounded-xl">
+            <div className="flex">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
