@@ -26,8 +26,9 @@ const Hero = () => {
           >
             <div className="md:max-w-[50rem]">
               <p className="relative text-base text-black dark:text-white md:text-[17px] lg:text-[20px] lg:mr-[2.3rem] lg:w-[29rem] font-inter tracking-tight">
-                Just a human making clean UI/UX designs and turning it into
-                code, while navigating a complicated relationship with CS
+                <span className="">UI/UX Designer.</span> Just a human making
+                clean user interfaces and turning it into code, while navigating
+                a complicated relationship with CS
                 <span className="absolute transform translate-y-[8px] rotate-45">
                   S.
                 </span>
