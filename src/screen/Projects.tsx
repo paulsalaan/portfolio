@@ -4,8 +4,8 @@ import ProjectCard from "@/components/UIComp/ProjectCard";
 import type { ProjectCardProps } from "@/components/UIComp/ProjectCard";
 import { cardVariants } from "@/cardVariant";
 import ExerEase from "@/assets/exerease_3.png";
-import Interture from "@/assets/interture_1.png";
-import UniClaim from "@/assets/uniclaim.png";
+import Interture from "@/assets/interture_thumbnail.png";
+import UniClaim from "@/assets/uniclaim_thumbnail.png";
 import Minispire from "@/assets/minispire.png";
 
 const Projects = () => {
@@ -15,7 +15,7 @@ const Projects = () => {
   const [activeTab, setActiveTab] = useState<"development" | "design">(
     () =>
       (localStorage.getItem("lastViewedTab") as "development" | "design") ||
-      "development"
+      "development",
   );
 
   useEffect(() => {
